@@ -13,6 +13,7 @@
   width: 70%;
   max-width: 900px;
   padding: 10px 25px;
+  flex-wrap: wrap;
 }
 
 .header-wrapper{
@@ -97,3 +98,28 @@
 }
 
 
+
+
+
+
+/* Adaptation for mobile devices */
+
+@media (max-width: 650px) {
+  .header{
+    flex-direction: column;
+    padding: 15px 20px;
+    width: 90%;
+    gap: 12px;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links li{
+    font-size: 18px;
+  }
+}
