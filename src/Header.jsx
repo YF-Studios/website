@@ -3,22 +3,21 @@ import './Header.css';
 
 const Header = () => {
     return (
-   <header className="header">
-      <div className="logo">
-        <span className="logo-text">YF Studios</span>
-      </div>
-      <nav>
+    <div className="header-wrapper">
+      <header className="header">
+        <div className="logo">
+          <span className="logo-icon">YF</span>
+          <span className="logo-text">Studios</span>
+        </div>
+
         <ul className="nav-links">
-          <button>About us</button>
-          <button>Projects</button>
-          <button>Courses</button>
-          <button>Contact</button>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-      </nav>
-      {/* <div className="cta">
-        
-      </div> */}
-    </header>
+      </header>
+    </div>
     );
 };
 
